@@ -1,0 +1,169 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    height: 100%;  /* Устанавливаем высоту для body и html на 100% */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Хедер */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: #333;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header .icon-link img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Notifications */
+.notifications {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.notifications.hidden {
+    display: none;
+}
+
+/* Cart */
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.cart-items .cart-item {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.cart-items .cart-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cart-items .cart-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.cart-items .cart-item .price {
+    font-size: 16px;
+    color: green;
+}
+
+.cart-items .cart-item .discount-price {
+    text-decoration: line-through;
+    color: red;
+}
+
+.cart-items .cart-item button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.cart-items .cart-item button:hover {
+    background-color: #d32f2f;
+}
+
+#empty-cart-message {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Order form */
+.order-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.order-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.order-form label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.order-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.order-form button:hover {
+    background-color: #45a049;
+}
+
+/* Футер */
+footer {
+    margin-top: auto;  
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}

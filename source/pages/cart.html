@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="/source/css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Магазин</div>
+            <div class="icons">
+                <a href="/index.html" class="icon-link" title="Корзина"><img src="/source/img/main.png" alt="Главная страница"></a>
+                <a href="/source/pages/homepage.html" class="icon-link" title="Личный кабинет"><img src="/source/img/profile.png" alt="Личный кабинет"></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Notifications (hidden when empty) -->
+    <div id="notifications" class="notifications hidden">
+        <p>Товар добавлен в корзину!</p>
+    </div>
+
+    <!-- Cart content -->
+    <main>
+        <h1>Корзина</h1>
+        
+        <div id="cart-items" class="cart-items">
+            <!-- Product cards will be here -->
+            <p id="empty-cart-message">Корзина пуста. Перейдите в каталог, чтобы добавить товары.</p>
+        </div>
+
+        <!-- Order form -->
+        <section class="order-form">
+            <h2>Оформление заказа</h2>
+            <form id="order-form">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Телефон</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="newsletter">Согласие на рассылку</label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+
+                <label for="address">Адрес доставки</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="delivery-date">Дата доставки</label>
+                <input type="date" id="delivery-date" name="delivery-date" required>
+
+                <label for="time-slot">Временной интервал доставки</label>
+                <select id="time-slot" name="time-slot">
+                    <option value="9-12">9:00 - 12:00</option>
+                    <option value="12-15">12:00 - 15:00</option>
+                    <option value="15-18">15:00 - 18:00</option>
+                    <option value="18-21">18:00 - 21:00</option>
+                </select>
+
+                <label for="comment">Комментарий</label>
+                <textarea id="comment" name="comment"></textarea>
+
+                <button type="submit">Оформить заказ</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div><p>Гядукян Рафаэл 231-3211</p></div>
+    </footer>
+
+    <script src="/source/js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="/source/css/style.css">
+</head>
+<body>
+    <!-- Хедер -->
+    <header>
+        <nav>
+            <div class="logo">Магазин</div>
+            <input type="text" class="search-bar" placeholder="Поиск...">
+            <div class="icons">
+                <a href="/source/pages/cart.html" class="icon-link" title="Корзина"><img src="/source/img/cart.png" alt="Корзина"></a>
+                <a href="/source/pages/homepage.html" class="icon-link" title="Личный кабинет"><img src="source/img/profile.png" alt="Личный кабинет"></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Всплывающие уведомления -->
+    <div class="notifications" id="notifications"></div>
+
+    <!-- Основной контент -->
+    <main>
+        <section class="filters_products">
+            <!-- Сайдбар -->
+            <aside class="sidebar">
+                <h3>Фильтры</h3>
+                <form id="filters">
+                    <div>
+                        <label>Категории:</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="furniture" name="category" value="Furniture">
+                            <label for="furniture">Мебель</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="camera-accessories" name="category" value="Camera Accessories">
+                            <label for="camera-accessories">Аксессуары для камеры</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="fitness-accessories" name="category" value="Fitness Accessories">
+                            <label for="fitness-accessories">Аксессуары для фитнеса</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="diet-nutrition" name="category" value="Diet & Nutrition">
+                            <label for="diet-nutrition">Диеты и питание</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="electronics" name="category" value="All Electronics">
+                            <label for="electronics">Электроника</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="home-kitchen" name="category" value="All Home & Kitchen">
+                            <label for="home-kitchen">Дом и кухня</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="price-min">Цена от:</label>
+                        <input type="number" id="price-min" name="price-min" min="0" step="100">
+                    </div>
+                    <div>
+                        <label for="price-max">Цена до:</label>
+                        <input type="number" id="price-max" name="price-max" min="0" step="100">
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="discount" name="discount">
+                        <label for="discount">Только товары со скидкой</label>
+                        
+                    </div>
+                    <button type="submit">Применить</button>
+                </form>
+            </aside>
+            <!-- Товары -->
+            <div class="main_elements">
+                <div class="sorting_area">
+                    <h2>Каталог</h2>
+                    <div class="sort">
+                        <label for="sort">Сортировать по:</label>
+                        <select id="sort">
+                            <option value="rating_asc">Рейтингу (по возрастанию)</option>
+                            <option value="rating_desc">Рейтингу (по убыванию)</option>
+                            <option value="price_asc">Цене (по возрастанию)</option>
+                            <option value="price_desc">Цене (по убыванию)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product-grid" id="product-grid">
+                    <!-- Карточки товаров будут добавляться сюда -->
+                </div>
+                <!-- Панель навигации по страницам -->
+                <div id="pagination"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div><p>Гядукян Рафаэл 231-3211</p></div>
+    </footer>
+
+    <script src="/source/js/main.js"></script>
+</body>
+</html>
