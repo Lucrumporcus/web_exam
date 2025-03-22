@@ -59,7 +59,7 @@
 }
 
 .sidebar__list-item:hover {
-    background-color: #d7232348;
+    background-color: #603DF548;
 }
 
 .sidebar__list-item > input, .sidebar__list-item > label {
@@ -92,7 +92,7 @@
 .catalog-sort {
     padding: 0.2rem 0.5rem;
     border-radius: 3px;
-    border: 1px solid #d72323;
+    border: 1px solid #603DF5;
 }
 
 .catalog__list {
@@ -144,7 +144,7 @@
 }
 
 .input-wrapper input:focus {
-    border-color: #d72323;
+    border-color: #603DF5;
 }
 
 /* числовой ввод диапазона цены */
@@ -261,7 +261,7 @@
         padding: 0.5rem;
         background: rgb(255, 255, 255);
         border-radius: 7px;
-        border: 1px solid #d72323;
+        border: 1px solid #603DF5;
         z-index: 5;
     }
 

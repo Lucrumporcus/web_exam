@@ -46,13 +46,13 @@
 .cart__form-item input, .cart__form-item select {
     padding: 10px 15px;
     border-radius: 7px;
-    border: 1px solid #d72323;
+    border: 1px solid #603DF5;
     font-size: 18px;
 }
 
 .cart__form-item textarea {
     border-radius: 7px;
-    border: 1px solid #d72323;
+    border: 1px solid #603DF5;
     padding: 10px 15px;
     min-height: 90px;
 }
